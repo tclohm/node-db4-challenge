@@ -1,0 +1,17 @@
+Recipes = {
+	id: Int
+	ingredients: [Ingredients]
+	steps: [Steps]
+}
+
+Ingredients = {
+	id: Int
+	name: String
+	quantity: Float
+	recipes: [Recipes]
+}
+
+Steps = {
+	id: Int
+	text: String
+}
