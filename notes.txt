@@ -1,0 +1,22 @@
+Step = {
+	id: Int
+	text: String
+};
+
+Steps = {
+	id: Int
+	step_id: Step.id
+}
+
+Ingredient = {
+	id: Int
+	name: String
+	quantity: Int
+};
+
+Recipe = {
+	id: Int
+	name: String
+	steps_id: Steps.id
+	ingredients_id: Ingredient.id
+}
