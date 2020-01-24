@@ -1,17 +1,22 @@
-Recipes = {
+Step = {
 	id: Int
-	ingredients: [Ingredients]
-	steps: [Steps]
-}
-
-Ingredients = {
-	id: Int
-	name: String
-	quantity: Float
-	recipes: [Recipes]
-}
+	text: String
+};
 
 Steps = {
 	id: Int
-	text: String
+	step_id: Step.id
+}
+
+Ingredient = {
+	id: Int
+	name: String
+	quantity: Int
+};
+
+Recipe = {
+	id: Int
+	name: String
+	steps_id: Steps.id
+	ingredients_id: Ingredient.id
 }
